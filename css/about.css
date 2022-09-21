@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+.wrapper-about {
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgb(59, 29, 96)), color-stop(50%, rgb(4, 13, 62)));
+  background-image: linear-gradient(to left bottom, rgb(59, 29, 96) 0%, rgb(4, 13, 62) 50%);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-about {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  border-radius: 4px;
+  background-color: #1F2157;
+}

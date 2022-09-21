@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+.wrapper-sign {
+    background-color: rgba(4, 13, 62, 1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sign {
+    max-width: fit-content;
+    max-height: fit-content;
+    border-radius: 4px;
+    background-color: #1F2157;
+}
+
+.sign-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    &__title {
+        color: #F2994A;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 43px;
+        padding-bottom: 10px;
+    }
+
+    &__input-title {
+        color: #95A1BB;
+        font-weight: 200;
+        margin-bottom: 5px;
+    }
+
+    &__input {
+        width: 200px;
+        height: 25px;
+        border-radius: 5px;
+        border: 0;
+        margin-bottom: 20px;
+        outline: none;
+        color: #F2994A;
+        text-align: center;
+
+    }
+
+
+    &__remember {
+        color: #95A1BB;
+        font-weight: 200;
+        margin-top: -5px;
+    }
+
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &__checkbox+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        color: #95A1BB;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    &__checkbox+label::before {
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 0.25em;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+    }
+
+    &__checkbox:checked+label::before {
+        border-color: #0b76ef;
+        background-color: #0b76ef;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+
+}
+
+button {
+    width: 100px;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #F2994A;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px #F2994A;
+        text-shadow: 0 0 10px #F2994A;
+        transition: box-shadow 0.5s, text-shadow 0.5s;
+    }
+}
+
+.button-text {
+    color: white;
+    font-weight: 100;
+}
