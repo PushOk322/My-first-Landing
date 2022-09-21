@@ -1,5 +1,5 @@
 # My-first-Landing
-Landing page of a server company
+Landing page of a server company.
 Hi, this is my first landing page. This page is fully responsible, 
 I used BEM nesting in HTML tags classes. 
 Also instead of clear CSS i used SCSS due to opportunities it gives.
